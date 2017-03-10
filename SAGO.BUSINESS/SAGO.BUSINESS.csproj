@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D42E8368-8A7E-425C-A2FF-62256AD53A8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAGO.BUSINESS</RootNamespace>
+    <AssemblyName>SAGO.BUSINESS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BFALUMNO.cs" />
+    <Compile Include="BFAPORTE_CLIENTE.cs" />
+    <Compile Include="BFCARGO.cs" />
+    <Compile Include="BFCENTRO_COSTO.cs" />
+    <Compile Include="BFCLIENTE.cs" />
+    <Compile Include="BFCOMUNA.cs" />
+    <Compile Include="BFCUENTA.cs" />
+    <Compile Include="BFCURSO_CAPACITACION.cs" />
+    <Compile Include="BFCURSO_SENCE.cs" />
+    <Compile Include="BFEDUCACION_SENCE.cs" />
+    <Compile Include="BFEMPLEADO.cs" />
+    <Compile Include="BFESTADO_APORTE_CLIENTE.cs" />
+    <Compile Include="BFESTADO_CURSO.cs" />
+    <Compile Include="BFESTADO_MOVIMEINTO_CONTABLE.cs" />
+    <Compile Include="BFFRANQUICIA_ECCL.cs" />
+    <Compile Include="BFFRANQUICIA_SENCE.cs" />
+    <Compile Include="BFHORARIO.cs" />
+    <Compile Include="BFMODALIDAD.cs" />
+    <Compile Include="BFMOVIMIENTO_APORTE.cs" />
+    <Compile Include="BFMOVIMIENTO_CONTABLE.cs" />
+    <Compile Include="BFOCUPACION_SENCE.cs" />
+    <Compile Include="BFOTEC.cs" />
+    <Compile Include="BFREGION.cs" />
+    <Compile Include="BFSESSIONUSUARIO.cs" />
+    <Compile Include="BFSEXO.cs" />
+    <Compile Include="BFTIPO_APORTE_CLIENTE.cs" />
+    <Compile Include="BFTIPO_CONTRATO.cs" />
+    <Compile Include="BFTIPO_DOCTO.cs" />
+    <Compile Include="BFTIPO_MOVIMIENTO_CONTABLE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAGO.CLASES\SAGO.CLASES.csproj">
+      <Project>{922F508A-00ED-48A8-BEF8-69AC2D40C608}</Project>
+      <Name>SAGO.CLASES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAGO.COMMON\SAGO.COMMON.csproj">
+      <Project>{77C9E64E-EC92-4202-8CF0-031FA884467D}</Project>
+      <Name>SAGO.COMMON</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

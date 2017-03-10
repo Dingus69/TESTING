@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{922F508A-00ED-48A8-BEF8-69AC2D40C608}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAGO.CLASES</RootNamespace>
+    <AssemblyName>SAGO.CLASES</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\DLALUMNO.cs" />
+    <Compile Include="DAL\DLALUMNOList.cs" />
+    <Compile Include="DAL\DLAPORTE_CLIENTE.cs" />
+    <Compile Include="DAL\DLAPORTE_CLIENTEList.cs" />
+    <Compile Include="DAL\DLBase.cs" />
+    <Compile Include="DAL\DLCARGO.cs" />
+    <Compile Include="DAL\DLCARGOList.cs" />
+    <Compile Include="DAL\DLCENTRO_COSTO.cs" />
+    <Compile Include="DAL\DLCENTRO_COSTOList.cs" />
+    <Compile Include="DAL\DLCLIENTE.cs" />
+    <Compile Include="DAL\DLCLIENTEList.cs" />
+    <Compile Include="DAL\DLCOMUNA.cs" />
+    <Compile Include="DAL\DLCOMUNAList.cs" />
+    <Compile Include="DAL\DLCUENTA.cs" />
+    <Compile Include="DAL\DLCUENTAList.cs" />
+    <Compile Include="DAL\DLCURSO_CAPACITACION.cs" />
+    <Compile Include="DAL\DLCURSO_CAPACITACIONList.cs" />
+    <Compile Include="DAL\DLCURSO_SENCE.cs" />
+    <Compile Include="DAL\DLCURSO_SENCEList.cs" />
+    <Compile Include="DAL\DLEDUCACION_SENCE.cs" />
+    <Compile Include="DAL\DLEDUCACION_SENCEList.cs" />
+    <Compile Include="DAL\DLEMPLEADO.cs" />
+    <Compile Include="DAL\DLEMPLEADOList.cs" />
+    <Compile Include="DAL\DLESTADO_APORTE_CLIENTE.cs" />
+    <Compile Include="DAL\DLESTADO_APORTE_CLIENTEList.cs" />
+    <Compile Include="DAL\DLESTADO_CURSO.cs" />
+    <Compile Include="DAL\DLESTADO_CURSOList.cs" />
+    <Compile Include="DAL\DLESTADO_MOVIMEINTO_CONTABLE.cs" />
+    <Compile Include="DAL\DLESTADO_MOVIMEINTO_CONTABLEList.cs" />
+    <Compile Include="DAL\DLFRANQUICIA_ECCL.cs" />
+    <Compile Include="DAL\DLFRANQUICIA_ECCLList.cs" />
+    <Compile Include="DAL\DLFRANQUICIA_SENCE.cs" />
+    <Compile Include="DAL\DLFRANQUICIA_SENCEList.cs" />
+    <Compile Include="DAL\DLGenericBaseList.cs" />
+    <Compile Include="DAL\DLHORARIO.cs" />
+    <Compile Include="DAL\DLHORARIOList.cs" />
+    <Compile Include="DAL\DLMODALIDAD.cs" />
+    <Compile Include="DAL\DLMODALIDADList.cs" />
+    <Compile Include="DAL\DLMOVIMIENTO_APORTE.cs" />
+    <Compile Include="DAL\DLMOVIMIENTO_APORTEList.cs" />
+    <Compile Include="DAL\DLMOVIMIENTO_CONTABLE.cs" />
+    <Compile Include="DAL\DLMOVIMIENTO_CONTABLEList.cs" />
+    <Compile Include="DAL\DLOCUPACION_SENCE.cs" />
+    <Compile Include="DAL\DLOCUPACION_SENCEList.cs" />
+    <Compile Include="DAL\DLOTEC.cs" />
+    <Compile Include="DAL\DLOTECList.cs" />
+    <Compile Include="DAL\DLREGION.cs" />
+    <Compile Include="DAL\DLREGIONList.cs" />
+    <Compile Include="DAL\DLSESSIONUSUARIO.cs" />
+    <Compile Include="DAL\DLSEXO.cs" />
+    <Compile Include="DAL\DLSEXOList.cs" />
+    <Compile Include="DAL\DLTIPO_APORTE_CLIENTE.cs" />
+    <Compile Include="DAL\DLTIPO_APORTE_CLIENTEList.cs" />
+    <Compile Include="DAL\DLTIPO_CONTRATO.cs" />
+    <Compile Include="DAL\DLTIPO_CONTRATOList.cs" />
+    <Compile Include="DAL\DLTIPO_DOCTO.cs" />
+    <Compile Include="DAL\DLTIPO_DOCTOList.cs" />
+    <Compile Include="DAL\DLTIPO_MOVIMIENTO_CONTABLE.cs" />
+    <Compile Include="DAL\DLTIPO_MOVIMIENTO_CONTABLEList.cs" />
+    <Compile Include="DAL\MapperRegistry.cs" />
+    <Compile Include="DAO\DomainObject.cs" />
+    <Compile Include="DAO\EALUMNO.cs" />
+    <Compile Include="DAO\EAPORTE_CLIENTE.cs" />
+    <Compile Include="DAO\ECARGO.cs" />
+    <Compile Include="DAO\ECENTRO_COSTO.cs" />
+    <Compile Include="DAO\ECLIENTE.cs" />
+    <Compile Include="DAO\ECOMUNA.cs" />
+    <Compile Include="DAO\ECUENTA.cs" />
+    <Compile Include="DAO\ECURSO_CAPACITACION.cs" />
+    <Compile Include="DAO\ECURSO_SENCE.cs" />
+    <Compile Include="DAO\EEDUCACION_SENCE.cs" />
+    <Compile Include="DAO\EEMPLEADO.cs" />
+    <Compile Include="DAO\EESTADO_APORTE_CLIENTE.cs" />
+    <Compile Include="DAO\EESTADO_CURSO.cs" />
+    <Compile Include="DAO\EESTADO_MOVIMEINTO_CONTABLE.cs" />
+    <Compile Include="DAO\EFRANQUICIA_ECCL.cs" />
+    <Compile Include="DAO\EFRANQUICIA_SENCE.cs" />
+    <Compile Include="DAO\EHORARIO.cs" />
+    <Compile Include="DAO\EMODALIDAD.cs" />
+    <Compile Include="DAO\EMOVIMIENTO_APORTE.cs" />
+    <Compile Include="DAO\EMOVIMIENTO_CONTABLE.cs" />
+    <Compile Include="DAO\EOCUPACION_SENCE.cs" />
+    <Compile Include="DAO\EOTEC.cs" />
+    <Compile Include="DAO\EREGION.cs" />
+    <Compile Include="DAO\ESESSIONUSUARIO.cs" />
+    <Compile Include="DAO\ESEXO.cs" />
+    <Compile Include="DAO\ETIPO_APORTE_CLIENTE.cs" />
+    <Compile Include="DAO\ETIPO_CONTRATO.cs" />
+    <Compile Include="DAO\ETIPO_DOCTO.cs" />
+    <Compile Include="DAO\ETIPO_MOVIMIENTO_CONTABLE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAGO.COMMON\SAGO.COMMON.csproj">
+      <Project>{77C9E64E-EC92-4202-8CF0-031FA884467D}</Project>
+      <Name>SAGO.COMMON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAGO.DATAACCESS\SAGO.DATAACCESS.csproj">
+      <Project>{0C62CF4B-2229-471E-8D1B-BF8FEDE62028}</Project>
+      <Name>SAGO.DATAACCESS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
